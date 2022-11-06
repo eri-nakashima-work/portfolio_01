@@ -1,0 +1,22 @@
+footer { // フッター
+
+	color: #fff;
+
+	@media screen and (min-width: 992px) { // PC
+
+		#footer-list-area {
+			ul#footer-gnav-ul {
+				display: flex;
+				justify-content: space-evenly;
+			}
+		}
+
+	} // END PC
+
+	@media screen and (max-width: 991px) { // tablet
+
+		#footer-brand-area,#footer-content-area { text-align: center; }
+
+	} // END tablet
+
+} // END フッター

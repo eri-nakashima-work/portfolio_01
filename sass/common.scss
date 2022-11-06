@@ -1,0 +1,65 @@
+main { margin-top: 58px; }
+
+
+
+.pagetop {
+	display: none;
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+	color: #fff;
+	span {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 25px;
+		background: #2b2b2b;
+		width: 50px;
+		height: 50px;
+		text-align: center;
+		line-height: 40px;
+		font-size: 36px;
+		opacity: .8;
+	}
+}
+
+.particles-bg {
+	position: relative;
+	.background {
+	    position: absolute;
+	    display: block;
+	    top: 0;
+	    left: 0;
+	    z-index: -1;
+	}
+}
+
+
+
+
+// レスポンシブ ---------------------------------------
+
+
+@media screen and (min-width: 992px) { // PC
+
+
+
+
+} // END PC
+
+
+
+
+@media screen and (max-width: 991px) { // tablet
+
+
+
+} // END tablet
+
+
+
+@media screen and (max-width: 767px) { // SP
+
+
+
+} // END SP
