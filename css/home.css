@@ -1,0 +1,327 @@
+@charset "UTF-8";
+#main_visual {
+  position: relative;
+  height: 50vh !important;
+  background-image: url(../img/mv.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#main_visual .mv-text {
+  position: absolute;
+  padding: 2rem;
+  left: 0;
+  bottom: 0;
+}
+#main_visual .mv-text .mv-desc {
+  margin: 0;
+  padding: 0 10px;
+  font-family: "Shippori Mincho", "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Verdana, "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-size: 1.8rem;
+  color: #fff;
+  background-color: #51b0cf;
+}
+@media screen and (max-width: 767px) {
+  #main_visual .mv-text {
+    padding: 1rem;
+  }
+  #main_visual .mv-text .mv-desc {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  #main_visual {
+    height: 40vh !important;
+  }
+}
+#front_about img {
+  max-width: 150px;
+}
+
+#front_why .cont-area {
+  padding: 0px 20px 0 70px;
+}
+@media (min-width: 992px) {
+  #front_why .cont-area .img-area {
+    margin-top: -50px;
+  }
+}
+@media screen and (max-width: 767px) {
+  #front_why .cont-area {
+    padding: 0;
+  }
+}
+
+#front_problem .bg01 {
+  padding-top: 20px;
+  padding-bottom: 60px;
+  background: url(../img/bg01.png) no-repeat center/contain;
+}
+
+#front_soln .headline-area .headline-lead {
+  font-size: 0.9rem;
+}
+#front_soln .headline-area .headline-lead:after {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: url(../img/fa/right-long-solid.svg) no-repeat;
+  margin-left: 5px;
+  vertical-align: text-top;
+}
+#front_soln .headline-area .headline-text {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+@media screen and (max-width: 991px) {
+  #front_soln .content-area {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
+#front_flow .img-area {
+  position: relative;
+  max-width: 205px;
+  max-height: 205px;
+  margin: 0 auto;
+}
+#front_flow .img-area:after {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 50px;
+  position: absolute;
+}
+#front_flow .arrow-right .img-area:after, #front_flow .arrow-left .img-area:after {
+  top: 50%;
+  right: -50px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+#front_flow .arrow-right .img-area:after {
+  background: url(../img/fa/caret-right-solid.svg) no-repeat;
+}
+#front_flow .arrow-left .img-area:after {
+  background: url(../img/fa/caret-left-solid.svg) no-repeat;
+}
+#front_flow .arrow-btm {
+  position: relative;
+}
+#front_flow .arrow-btm:after {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 50px;
+  background: url(../img/fa/caret-down-solid.svg) no-repeat;
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  -webkit-transform: translate(50%, 50%);
+          transform: translate(50%, 50%);
+}
+@media screen and (max-width: 991px) {
+  #front_flow .img-area:after, #front_flow .arrow-btm:after {
+    display: none;
+  }
+  #front_flow ul li:nth-child(5) {
+    -webkit-box-ordinal-group: 9;
+        -ms-flex-order: 8;
+            order: 8;
+  }
+  #front_flow ul li:nth-child(6) {
+    -webkit-box-ordinal-group: 8;
+        -ms-flex-order: 7;
+            order: 7;
+  }
+  #front_flow ul li:nth-child(7) {
+    -webkit-box-ordinal-group: 7;
+        -ms-flex-order: 6;
+            order: 6;
+  }
+  #front_flow ul li:nth-child(8) {
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
+  }
+}
+
+#front_cases .case-name {
+  margin: 30px 0;
+  text-align: center;
+}
+#front_cases .case-name span {
+  padding: 5px 10px;
+  border: solid 1px;
+  border-radius: 5px;
+}
+#front_cases .case-name.case01 span {
+  color: #fff;
+  border-color: #51b0cf;
+  background-color: #51b0cf;
+}
+#front_cases .case-name.case02 span {
+  color: #fff;
+  border-color: #f390b0;
+  background-color: #f390b0;
+}
+#front_cases .case-name.case03 span {
+  color: #51b0cf;
+  border-color: #51b0cf;
+  background-color: #fff;
+}
+
+#front_qa .qa-ttl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.1rem;
+}
+#front_qa .qa-answer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#front_qa .qa-answer span {
+  color: #51b0cf;
+  font-size: 1.1rem;
+}
+
+/* form
+-------------------------------------------------- */
+form {
+  margin: 0;
+  color: #fff;
+}
+
+fieldset {
+  border: 1px solid #e5e5e5;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+  border: 0;
+  padding: 0;
+  white-space: normal;
+  *margin-left: -7px;
+}
+
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+
+button,
+input,
+select {
+  line-height: normal;
+}
+
+button,
+html input[type=button],
+input[type=reset],
+input[type=submit],
+.btn {
+  cursor: pointer;
+  *overflow: visible;
+  -webkit-appearance: none;
+}
+
+button[disabled],
+input[disabled] {
+  cursor: default;
+}
+
+input[type=checkbox],
+input[type=radio] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  *height: 13px;
+  *width: 13px;
+}
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+/* form
+---------------------------------------- */
+form input[type=text],
+form input[type=email],
+form input[type=url],
+form input[type=tel],
+form input[type=number],
+form input[type=date],
+form textarea,
+form select {
+  border-radius: 3px;
+  padding: 8px 13px;
+  width: 100%;
+  border: 1px #ccc solid;
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #fff;
+}
+
+form textarea {
+  width: 100%;
+}
+
+form input[type=submit],
+form button {
+  padding: 12px 20px;
+  border: none;
+}
+
+form input[type=submit]:hover,
+form button:hover {
+  cursor: pointer;
+}
+
+label {
+  line-height: 2;
+}
+label span {
+  color: #000;
+}
+label span.wpcf7-list-item-label {
+  color: #fff;
+}
+
+form input[type=submit] {
+  background-color: #f390b0;
+  border-radius: 5px;
+}
+
+form p:last-child, form p:nth-last-child(1) {
+  text-align: center;
+}

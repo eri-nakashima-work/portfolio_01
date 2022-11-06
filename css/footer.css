@@ -1,0 +1,18 @@
+footer {
+  color: #fff;
+}
+@media screen and (min-width: 992px) {
+  footer #footer-list-area ul#footer-gnav-ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+@media screen and (max-width: 991px) {
+  footer #footer-brand-area, footer #footer-content-area {
+    text-align: center;
+  }
+}
